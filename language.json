@@ -1,0 +1,79 @@
+{
+  "languageId": "rust",
+  "extensions": ["rs"],
+  "serverId": "rust-analyzer",
+  "server": {
+    "strategy": "path",
+    "command": "rust-analyzer"
+  },
+  "rootMarker": "Cargo.toml",
+  "extraTokenColors": [
+    { "token": "struct", "foreground": "4EC9B0" },
+    { "token": "interface", "foreground": "4EC9B0" },
+    { "token": "union", "foreground": "4EC9B0" },
+    { "token": "typeAlias", "foreground": "4EC9B0" },
+    { "token": "builtinType", "foreground": "569CD6" },
+    { "token": "selfTypeKeyword", "foreground": "569CD6" },
+    { "token": "selfKeyword", "foreground": "569CD6" },
+    { "token": "lifetime", "foreground": "569CD6" },
+    { "token": "label", "foreground": "569CD6" },
+    { "token": "const", "foreground": "4FC1FF" },
+    { "token": "constParameter", "foreground": "4FC1FF" },
+    { "token": "static", "foreground": "4FC1FF" },
+    { "token": "macro", "foreground": "DCDCAA" },
+    { "token": "macroBang", "foreground": "DCDCAA" },
+    { "token": "procMacro", "foreground": "DCDCAA" },
+    { "token": "derive", "foreground": "DCDCAA" },
+    { "token": "deriveHelper", "foreground": "DCDCAA" },
+    { "token": "decorator", "foreground": "DCDCAA" },
+    { "token": "attribute", "foreground": "DCDCAA" },
+    { "token": "builtinAttribute", "foreground": "DCDCAA" },
+    { "token": "toolModule", "foreground": "DCDCAA" },
+    { "token": "character", "foreground": "CE9178" },
+    { "token": "escapeSequence", "foreground": "D7BA7D" },
+    { "token": "formatSpecifier", "foreground": "D7BA7D" },
+    { "token": "invalidEscapeSequence", "foreground": "F48771" },
+    { "token": "unresolvedReference", "foreground": "F48771" },
+    { "token": "generic", "foreground": "9CDCFE" },
+    { "token": "operator", "foreground": "D4D4D4" },
+    { "token": "arithmetic", "foreground": "D4D4D4" },
+    { "token": "bitwise", "foreground": "D4D4D4" },
+    { "token": "logical", "foreground": "D4D4D4" },
+    { "token": "comparison", "foreground": "D4D4D4" },
+    { "token": "negation", "foreground": "D4D4D4" },
+    { "token": "punctuation", "foreground": "D4D4D4" },
+    { "token": "angle", "foreground": "D4D4D4" },
+    { "token": "brace", "foreground": "D4D4D4" },
+    { "token": "bracket", "foreground": "D4D4D4" },
+    { "token": "parenthesis", "foreground": "D4D4D4" },
+    { "token": "attributeBracket", "foreground": "D4D4D4" },
+    { "token": "colon", "foreground": "D4D4D4" },
+    { "token": "comma", "foreground": "D4D4D4" },
+    { "token": "dot", "foreground": "D4D4D4" },
+    { "token": "semicolon", "foreground": "D4D4D4" },
+    { "token": "keyword.controlFlow", "foreground": "C586C0" },
+    { "token": "keyword.unsafe", "foreground": "F48771" },
+    { "token": "function.unsafe", "foreground": "F48771" },
+    { "token": "method.unsafe", "foreground": "F48771" },
+    { "token": "variable.mutable", "foreground": "9CDCFE", "fontStyle": "underline" },
+    { "token": "parameter.mutable", "foreground": "9CDCFE", "fontStyle": "underline" },
+    { "token": "variable.constant", "foreground": "4FC1FF" },
+    { "token": "comment.documentation", "foreground": "6A9955", "fontStyle": "italic" }
+  ],
+  "configuration": {
+    "rust-analyzer": {
+      "checkOnSave": true,
+      "check": { "command": "check" },
+      "cargo": { "buildScripts": { "enable": true } },
+      "procMacro": { "enable": true }
+    }
+  },
+  "statusNotifications": {
+    "experimental/serverStatus": {
+      "phase": "ready",
+      "flagParam": "quiescent",
+      "detailWhenTrue": "ready",
+      "detailWhenFalse": "indexing…"
+    }
+  }
+}
