@@ -1,5 +1,6 @@
 {
   "languageId": "rust",
+  "version": "1.0.0",
   "extensions": ["rs"],
   "serverId": "rust-analyzer",
   "server": {
